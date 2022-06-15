@@ -62,4 +62,5 @@ li {
   background-color: rgb(34, 83, 132);
   color: white;
   transform: rotateY(180deg);
+  overflow: hidden;
 }
