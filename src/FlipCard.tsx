@@ -2,16 +2,11 @@
 export interface Letter {
     letter: string
     word: string
-    image?: string
+    index: number
 }
 
 export function FlipCard(letter: Letter) {  
-    var image = (letter.image === undefined) ? (
-        ""
-    ) : (
-        <img src={letter.image} alt={letter.word}/>
-    )
-
+    var src = "./public/" + letter.index + '.jpg'
     return (
       <p className="item flip-card">
         <div className="flip-card-inner">
@@ -20,7 +15,7 @@ export function FlipCard(letter: Letter) {
           </div>
           <div className="flip-card-back">
             <p>{letter.word}</p>
-            {image}
+            <img src={`${process.env.PUBLIC_URL}/${letter.index}.jpg`}  alt={letter.word}/>
           </div>
         </div>
       </p>

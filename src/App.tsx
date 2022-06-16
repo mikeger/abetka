@@ -3,7 +3,7 @@ import lettersJSON from './letters.json'
 import { Letter, FlipCard } from './FlipCard'
 
 function App() {
-  var letters: Array<Letter> = lettersJSON
+  var letters: Array<Letter> = lettersJSON.map((letter, index) => ({...letter, index }))
   
   var contents = letters.map(letter => {
     return FlipCard(letter)
@@ -15,7 +15,7 @@ function App() {
       <div className="item-container">
       {contents}
       </div>
-      <div className="footer">Images from public sources (https://pixabay.com/, Wikipedia) © <a href="mailto:abetka@gerasimenko.me">Michael, Anastasia Gerasymenko</a></div>
+      <div className="footer">Images from public sources (https://pixabay.com/, Wikipedia)<br /> © <a href="mailto:abetka@gerasimenko.me">Michael, Anastasia Gerasymenko</a></div>
     </div>
   );
 }
