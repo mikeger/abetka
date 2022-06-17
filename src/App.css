@@ -3,11 +3,11 @@ li {
 }
 
 .item-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(auto-fill, 340px);
-  grid-row-gap: .5em;
-  grid-column-gap: 1em;
+
+}
+
+.App {
+  margin: 20px;
 }
 
 .item img {
@@ -16,13 +16,23 @@ li {
  max-height: 100%;
 }
 
+button.play {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: large;
+}
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 300px;
+  float: left;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  
+  margin: 20px;
 }
 
 /* This container is needed to position the front and back side */
@@ -55,6 +65,7 @@ li {
   color: white;
   font-size: 90pt;
   font-weight: 800;
+  line-height: 300px;
 }
 
 /* Style the back side */
@@ -63,4 +74,8 @@ li {
   color: white;
   transform: rotateY(180deg);
   overflow: hidden;
+}
+
+.footer {
+  float: left;
 }

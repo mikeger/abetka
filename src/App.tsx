@@ -15,6 +15,7 @@ function App() {
       <div className="item-container">
       {contents}
       </div>
+      <br />
       <div className="footer">Images from public sources (https://pixabay.com/, Wikipedia)<br /> © <a href="mailto:abetka@gerasimenko.me">Michael, Anastasia Gerasymenko</a></div>
     </div>
   );

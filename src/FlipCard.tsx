@@ -7,18 +7,26 @@ export interface Letter {
 
 export function FlipCard(letter: Letter) {  
     var src = "./public/" + letter.index + '.jpg'
+    const audio = new Audio(
+        `${process.env.PUBLIC_URL}/${letter.index}.mp3`
+    )
+    
+    const start = () => {
+        audio.play()
+    }
+    
     return (
-      <p className="item flip-card">
+      <span className="item flip-card">
         <div className="flip-card-inner">
           <div className="flip-card-front">
             {letter.letter}
           </div>
           <div className="flip-card-back">
-            <p>{letter.word}</p>
+            <p><button onClick={start} className="play">{letter.word} ▶️</button></p>
             <img src={`${process.env.PUBLIC_URL}/${letter.index}.jpg`}  alt={letter.word}/>
           </div>
         </div>
-      </p>
+      </span>
     )
 }
 
