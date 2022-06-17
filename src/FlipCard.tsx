@@ -6,12 +6,14 @@ export interface Letter {
 }
 
 export function FlipCard(letter: Letter) {  
-    var src = "./public/" + letter.index + '.jpg'
-    const audio = new Audio(
-        `${process.env.PUBLIC_URL}/${letter.index}.mp3`
-    )
+    const src = "./public/" + letter.index + '.jpg'
+
     
     const start = () => {
+        const audio = new Audio(
+            `${process.env.PUBLIC_URL}/${letter.index}.mp3`
+        )
+
         audio.play()
     }
     
