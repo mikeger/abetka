@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/abetka/static/css/main.a5b9382d.css",
-    "main.js": "/abetka/static/js/main.a9ce81cb.js",
+    "main.js": "/abetka/static/js/main.b98f1da6.js",
     "index.html": "/abetka/index.html",
     "main.a5b9382d.css.map": "/abetka/static/css/main.a5b9382d.css.map",
-    "main.a9ce81cb.js.map": "/abetka/static/js/main.a9ce81cb.js.map"
+    "main.b98f1da6.js.map": "/abetka/static/js/main.b98f1da6.js.map"
   },
   "entrypoints": [
     "static/css/main.a5b9382d.css",
-    "static/js/main.a9ce81cb.js"
+    "static/js/main.b98f1da6.js"
   ]
 }
